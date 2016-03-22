@@ -49,6 +49,10 @@ describe Jugoya::Moon do
   end
 
   describe 'is #almost_full?' do
+    it 'when almost full return true' do
+      @moon.phase = 170
+      expect(@moon.almost_full?).to be true
+    end
   end
 
   describe 'is #almost_half' do
