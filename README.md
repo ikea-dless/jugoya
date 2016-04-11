@@ -1,4 +1,4 @@
-# Jugoya
+# Jugoya(Not yet release)
 
 [![Build Status](https://api.travis-ci.org/ikea-dless/jugoya.svg?branch=master)](http://travis-ci.org/ikea-dless/jugoya)
 [![Coverage Status](https://coveralls.io/repos/github/ikea-dless/jugoya/badge.svg?branch=master)](https://coveralls.io/github/ikea-dless/jugoya?branch=master)
