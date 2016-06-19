@@ -62,28 +62,36 @@ describe Jugoya::Moon do
   end
 
   describe 'show #status' do
+    subject { @moon.status }
+
     it 'when full' do
       @moon.phase = 180
-      expect(@moon.status).to eq '満月やで'
+      is_expected.to eq 'full_moon'
     end
 
     it 'when half' do
       @moon.phase = 90
-      expect(@moon.status).to eq '半月やで'
+      is_expected.to eq 'half_moon'
     end
 
     it 'when crescent' do
       @moon.phase = 27
-      expect(@moon.status).to eq '三日月やで'
+      is_expected.to eq 'crescent_moon'
     end
 
     it 'when almost full' do
+      @moon.phase = 170
+      is_expected.to eq 'almost_full_moon'
     end
 
     it 'when almost half' do
+      @moon.phase = 85
+      is_expected.to eq 'almost_half_moon'
     end
 
     it 'when almost crescent' do
+      @moon.phase = 22
+      is_expected.to eq 'almost_crescent_moon'
     end
   end
 end

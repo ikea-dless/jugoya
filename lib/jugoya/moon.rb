@@ -42,7 +42,7 @@ module Jugoya
       when crescent?
         'crescent_moon'
       when almost_full?
-        'alomost_full_moon'
+        'almost_full_moon'
       when almost_half?
         'almost_half_moon'
       when almost_crescent?
