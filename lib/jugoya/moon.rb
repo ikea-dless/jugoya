@@ -10,15 +10,15 @@ module Jugoya
     end
 
     def full?
-      @phase == @@full_phase ? true : false
+      @phase == @@full_phase
     end
 
     def half?
-      @phase == @@half_phase ? true : false
+      @phase == @@half_phase
     end
 
     def crescent?
-      @phase == @@crescent_phase ? true : false
+      @phase == @@crescent_phase
     end
 
     def almost_full?
@@ -36,19 +36,19 @@ module Jugoya
     def status
       case
       when full?
-        '満月やで'
+        'full_moon'
       when half?
-        '半月やで'
+        'half_moon'
       when crescent?
-        '三日月やで'
+        'crescent_moon'
       when almost_full?
-        'だいたい満月やで'
+        'alomost_full_moon'
       when almost_half?
-        'だいたい半月やで'
+        'almost_half_moon'
       when almost_crescent?
-        'だいたい三日月やで'
+        'almost_crescent_moon'
       else
-        '今日はアカン'
+        'oops.. you will not to be able to worship the beautiful moon.'
       end
     end
   end
